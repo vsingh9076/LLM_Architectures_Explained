@@ -1,0 +1,13 @@
+layers=12, d_model=768, heads=12, context=1024, vocab=50257, parameters=124M
+['The', 'ĠTrans', 'former', 'Ġarchitecture', 'Ġchanged', 'Ġnatural', 'Ġlanguage', 'Ġprocessing', 'Ġbecause']
+       ' it'  0.325
+       ' of'  0.194
+      ' the'  0.150
+       ' we'  0.022
+    ' there'  0.021
+
+[greedy] The Transformer architecture changed natural language processing because it was able to use the same language as the human brain.
+
+The Transformer architecture was able to use the same language as the human brain
+
+[sampled] The Transformer architecture changed natural language processing because a fundamental problem with our current digital is that the physical medium of record recognition is far too small and unconnected to be used in a general-purpose

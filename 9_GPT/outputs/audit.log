@@ -1,0 +1,6 @@
+parameters: 818048 | tied: True
+causal leak (max diff on shared prefix): 0.0
+SDPA vs explicit mask, allclose: True max diff 1.4901161193847656e-08
+temperature 0 -> temperature must be > 0 (for greedy decoding, take the argmax instead)
+top_k=1000 ok: torch.Size([1, 4])
+long generation shape: torch.Size([1, 146])
