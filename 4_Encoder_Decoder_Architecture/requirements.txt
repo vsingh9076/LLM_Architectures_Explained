@@ -1,0 +1,5 @@
+torch==2.15.0
+spacy==3.8.18
+datasets==5.2.0
+sacrebleu==2.6.0
+jupyter==1.1.1
