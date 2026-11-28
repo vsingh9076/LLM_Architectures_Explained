@@ -21,5 +21,5 @@ The notebook downloads ELMo's published files (the small 54 MB model) and saves 
 ## Results
 
 - Output shape: (2 sentences, 5 words, 256 numbers per word).
-- `Elmo` uses dropout 0.5 by default and starts in training mode, so the article's code gives slightly different vectors on every run. After `elmo.eval()`, "green" in *green apple* and *green thumb* has a cosine similarity of 0.953: the same word gets a different vector in each context, which a static embedding such as Word2Vec cannot do.
+- `Elmo` uses dropout 0.5 by default and starts in training mode, so the article's code gives different vectors on every run (in two runs, the similarity below came out 0.35 and 0.42). After `elmo.eval()`, every run gives the same vectors: "green" in *green apple* and *green thumb* has a cosine similarity of 0.953 (0.951 if `elmo.eval()` is set before the first call, because ELMo's LSTM carries its state from one call to the next): the same word gets a different vector in each context, which a static embedding such as Word2Vec cannot do.
 - On macOS, `torchvision` prints a warning that it could not load its image library; it is not used here and can be ignored.
